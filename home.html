@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css stylesheet file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start creating the header of the website which contains the logo and the navbar of the site -->
+    <header class="header" id="home">
+        <!-- Logo of the site -->
+        <a href="home.html" class="logo"><i class="fas fa-shopping-basket"></i>grocery</a>
+        <!-- Creating the navbar of the site -->
+        <nav class="navbar">
+            <a href="home.html" class="page" id="page1">home</a>
+            <a href="shop.html">shop</a>
+            <a href="about.html">about</a>
+            <a href="review.html">review</a>
+            <a href="blog.html">blog</a>
+        </nav>
+        <!-- The icons that is going to be used in the responsive section -->
+        <div class="icons">
+            <div class="fa-solid fa-bars menu-btn" id="menu-btn"></div>
+            <div class="fas fa-search search-btn" id="search-btn"></div>
+            <div class="fas fa-shopping-cart cart" id="cart-btn"></div>
+            <div class="fas fa-user user" id="user-btn"></div>
+        </div>
+
+        <!-- Search Input field -->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!-- creating the shopping cart -->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times close"></i>
+            <img src="image/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>Vegetables</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times close"></i>
+            <img src="image/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>Diaries</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times close"></i>
+            <img src="image/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>Beans</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">18.99</span>
+            </div>
+        </div>
+        <h3 class="total">total: <span>56.97</span></h3>
+        <a href="#" class="btn">checkout cart</a>
+    </div>
+
+    <!-- Creating the form login of the users -->
+    <form action="" class="login-form">
+        <h3>Login Form</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>Forget password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Create one</a></p>
+    </form>
+    </header>
+    <!-- End creating the header section -->
+
+
+    <!-- Start creating the hero section -->
+    <section class="hero">
+        <div class="slides-container">
+            <div class="slide active">
+                <div class="content">
+                    <span>fresh and organic</span>
+                    <h3>upto 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-1.png" alt="home">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>fresh and organic</span>
+                    <h3>upto 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-2.png" alt="home">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>fresh and organic</span>
+                    <h3>upto 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-3.png" alt="home">
+                </div>
+            </div>
+        </div>
+
+        <div class="fas fa-angle-right" id="next" onclick="next()"></div>
+        <div class="fas fa-angle-left" id="prev" onclick="prev()"></div>
+    </section>
+    <!-- End creating the hero section -->
+
+
+    <!-- Start creating banner section -->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="image/banner-1.jpg" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="image/banner-2.jpg" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="image/banner-3.jpg" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+    </section>
+    <!-- End creating banner section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start creating the footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+                <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>my order</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>my favorite</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>my wishlist</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>my account</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>terms or use</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>twitter</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i>instagram</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i>pinterest</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for more</p>
+                <form action="">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+                <img src="image/payment.png" class="payment" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit">
+        created by me | all rights reserved
+    </section>
+    <!-- End creating the footer section -->
+    <script src="script.js"></script>
+</body>
+</html>

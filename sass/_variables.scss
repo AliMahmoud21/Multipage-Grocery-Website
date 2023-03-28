@@ -1,0 +1,115 @@
+
+
+// Set of colors variables and dimensions
+$green:#bac34e;
+$black:#222;
+$white:#fff;
+$light-color:#666;
+$light-bg:#f3f3f3;
+$border:.1rem solid rgba(0,0,0,.1);
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+$transition: all .4s ease;
+
+
+
+// Styling buttons
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background-color: $green;
+    color: $white;
+    font-size: 1.7rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $black;
+    }
+}
+
+.heading {
+    background: {
+        image: url(../image/heading-bg.jpg);
+        size: cover;
+        position: center;
+    }
+    text-align: center;
+    padding: {
+        top: 12rem;
+        bottom: 8rem;
+    };
+    h1 {
+        color: $black;
+        font-size: 4rem;
+    }
+
+    p {
+        padding-top: 1rem;
+        font-size: 2rem;
+        color: $light-color;
+
+        a {
+            color: $black;
+            padding-right: .5rem;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
+
+.title {
+    @extend %display;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+    border-bottom: $border;
+    color: $black;
+
+    span {
+        color: $green;
+        padding-left: .7rem;
+    }
+
+    a {
+        margin-left: auto;
+        color: $light-color;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+// Div placeholder
+%div {
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: $light-color;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+
+// Position placeholder
+%position {
+    position: absolute;
+    top: -115%;
+    right: 2rem;
+    background-color: $white;
+    border-radius: .5rem;
+    box-shadow: $box-shadow;
+    transition: $transition;
+}
+
+
+// Display placeholder
+%display {
+    display: flex;
+    align-items: center;
+}

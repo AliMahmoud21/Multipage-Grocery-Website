@@ -1,0 +1,106 @@
+
+// Importing other files
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Styling the category section
+.category {
+    .box-container {
+        @include grid(16rem);
+        padding: 4rem 0;
+
+        .box {
+            text-align: center;
+
+            img {
+                height: 15rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: $light-color;
+                margin: 1rem 0;
+
+            }
+            &:hover h3 {
+                color: $green;
+            }
+        }
+    }
+}
+
+// Styling the Products section
+.products {
+    .box-container {
+        @include grid(25rem);
+        
+        .box {
+            position: relative;
+            background: $light-bg;
+            text-align: center;
+            overflow: hidden;
+
+            &:hover .icons {
+                top: 0;
+            }
+
+            .icons {
+                @include flex-center;
+                background-color: rgba(243, 243, 243, .8);
+                position: absolute;
+                top: -105%;
+                left: 0;
+                height: 30rem;
+                width: 100%;
+                gap: 1rem;
+
+                a {
+                    font-size: 2rem;
+                    height: 5rem;
+                    width: 5rem;
+                    line-height: 5rem;
+                    background: $white;
+                    box-shadow: $box-shadow;
+                    color: $light-color;
+
+                    &:hover {
+                        background: $green;
+                        color: $white;
+                    }
+                }
+            }
+            .image {
+                height: 30rem;
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content {
+                padding: 1.5rem;
+
+                h3 {
+                    font-size: 2rem;
+                    color: $black;
+                }
+
+                .price {
+                    font-size: 2rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+
+                .stars {
+                    i {
+                        font-size: 1.7rem;
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

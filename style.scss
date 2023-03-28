@@ -1,0 +1,28 @@
+
+// Importing sass files
+// The global file
+@use 'sass/global';
+
+// The variables file
+@use 'sass/variables';
+
+// The mixins file
+@use 'sass/mixins';
+
+// Home file
+@use 'sass/home';
+
+// Footer file
+@use 'sass/footer';
+
+// Shop file
+@use 'sass/shop';
+
+// Shop file
+@use 'sass/about';
+
+// Shop file
+@use 'sass/review';
+
+// Shop file
+@use 'sass/blog';

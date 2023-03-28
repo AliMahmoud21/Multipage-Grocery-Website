@@ -1,0 +1,104 @@
+// Importing the other files
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+// Start styling the footer
+.footer {
+    background-color: $light-bg;
+
+    .box-container {
+        @include grid(25rem);
+
+        .box {
+            h3 {
+                font-size: 2.2rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+
+            p {
+                font-size: 1.8rem;
+                color: $light-color;
+                padding-bottom: .5rem;
+            }
+
+            a {
+                font-size: 1.6rem;
+                color: $light-color;
+                padding: 1rem 0;
+                display: block;
+
+                &:hover {
+                    color: $green;
+                    transform: translate(4px, -4px);
+                }
+
+                i {
+                    padding-right: 2rem;
+                }
+            }
+
+            i {
+                padding-right: .5rem;
+                color: $green;
+            }
+
+            form input[type="email"] {
+                width: 100%;
+                padding: 1rem 1.2rem;
+                font-size: 1.6rem;
+                color: $black;
+                margin: 1rem 0;
+                text-transform: none;
+            }
+
+            .payment {
+                width: 100%;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+.credit {
+    text-align: center;
+    background-color: $green;
+    color: $white;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+// Media queries
+@media (max-width: 991px) {
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            padding-left: 2.5rem;
+            .box {
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+}
